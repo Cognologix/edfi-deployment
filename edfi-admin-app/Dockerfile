@@ -13,7 +13,6 @@ COPY appsettings.template.json /app/appsettings.template.json
 COPY run.sh /app/run.sh
 COPY log4net.config /app/log4net.txt
 
-COPY --from=gcr.io/berglas/berglas:latest /bin/berglas /bin/berglas
 
 RUN apk add unzip dos2unix bash gettext postgresql-client && \
     wget -O /app/AdminApp.zip  https://pkgs.dev.azure.com/ed-fi-alliance/Ed-Fi-Alliance-OSS/_apis/packaging/feeds/EdFi/nuget/packages/EdFi.Suite3.ODS.AdminApp.Web/versions/${VERSION}/content && \
@@ -28,4 +27,4 @@ RUN apk add unzip dos2unix bash gettext postgresql-client && \
  
 EXPOSE "80"
 
-ENTRYPOINT exec /bin/berglas exec /app/run.sh
+ENTRYPOINT exec /app/run.sh
