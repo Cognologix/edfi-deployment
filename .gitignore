@@ -1,0 +1,11 @@
+artifacts/ed-fi-ods-admin-scripts
+artifacts/edfi-ods-admin
+artifacts/edfi-ods-extensions-texasextensions
+artifacts/edfi-ods-minimal
+artifacts/edfi-ods-security
+artifacts/edfi.database.admin.nupkg
+artifacts/edfi.database.security.nupkg
+artifacts/edfi.ods.extensions.texasextensions.nupkg
+artifacts/EdFi.Suite3.ODS.AdminApp.Database.nupkg
+artifacts/EdFi.Suite3.Ods.Minimal.Template.nupkg
+.idea
