@@ -1,4 +1,7 @@
-# update following command for PSQL create databases
+##############################################################
+# This script will create the database into postgres database
+##############################################################
+
 export PGHOST=$1
 export PGUSER=$2;
 export PGPASSWORD=$3;

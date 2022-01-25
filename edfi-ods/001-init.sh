@@ -1,3 +1,11 @@
+#####################################################################################
+# This script will download all required artifact to install ods postgres database
+#####################################################################################
+
+#--------------------------------
+# Downloading the Ed-fi packages
+#--------------------------------
+
 wget -O artifacts/edfi.database.admin.nupkg  https://pkgs.dev.azure.com/ed-fi-alliance/Ed-Fi-Alliance-OSS/_apis/packaging/feeds/EdFi/nuget/packages/EdFi.Database.Admin.PostgreSQL/versions/5.3.153/content;
 wget -O artifacts/edfi.database.security.nupkg https://pkgs.dev.azure.com/ed-fi-alliance/Ed-Fi-Alliance-OSS/_apis/packaging/feeds/EdFi/nuget/packages/EdFi.Database.Security.PostgreSQL/versions/5.3.151/content;
 
@@ -12,8 +20,9 @@ unzip artifacts/EdFi.Suite3.Ods.Minimal.Template.nupkg -d artifacts/edfi-ods-min
 
 unzip artifacts/EdFi.Suite3.ODS.AdminApp.Database.nupkg -d artifacts/ed-fi-ods-admin-scripts;
 
-
-# download Texes extension
+#------------------------------------------
+# Downloading the Texas Extension packages
+#------------------------------------------
 
 wget -O artifacts/edfi.ods.extensions.texasextensions.nupkg https://storage.googleapis.com/cglx-edfi-extensions/EdFi.Ods.Extensions.TexasExtensions.1.0.0.nupkg;
 

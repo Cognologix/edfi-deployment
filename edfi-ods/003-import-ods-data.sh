@@ -1,3 +1,7 @@
+#######################################################################
+# This script will import the ODS data into postgres database instance
+#######################################################################
+
 export PGHOST=$1
 export PGUSER=$2;
 export PGPASSWORD=$3;
