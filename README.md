@@ -39,7 +39,7 @@ Time to build an Ed-Fi API docker image. You'll notice a few files in the `edfi-
 
 
 ```bash
-bash edfi-api/build-edfi-api.sh $IMAGE_TAG
+bash edfi-api/build-edfi-api.sh $IMAGE_TAG $PROJECT_ID
 ```
 
 #### Deploy Ed-Fi Api Image
@@ -47,7 +47,7 @@ bash edfi-api/build-edfi-api.sh $IMAGE_TAG
 Time to deploy the Ed-Fi API docker image. 
 
 ```bash
-bash edfi-api/deploy-edfi-api.sh $IMAGE_TAG $PGHOST $PGUSER $PGPASSWORD;
+bash edfi-api/deploy-edfi-api.sh $IMAGE_TAG $PROJECT_ID $PGHOST $PGUSER $PGPASSWORD
 ```
 
 
@@ -59,7 +59,7 @@ Ed-Fi's Admin App be deployed as a separate application.
 Time to build an Ed-Fi Admin App docker image.
 
 ```bash
-bash edfi-admin-app/build-edfi-admin-app.sh $IMAGE_TAG
+bash edfi-admin-app/build-edfi-admin-app.sh $IMAGE_TAG $PROJECT_ID
 ```
 
 #### Ed-Fi Admin App encryption key
@@ -74,7 +74,7 @@ Run the Below command the keep the generated encryption key handy. This will nee
 Time to deploy the Ed-Fi Admin App docker image
 
 ```bash
-bash edfi-admin-app/deploy-edfi-admin-app.sh $IMAGE_TAG $PGHOST $PGUSER $PGPASSWORD $ENCRYPTION_KEY $API_URL
+bash edfi-admin-app/deploy-edfi-admin-app.sh $IMAGE_TAG $PROJECT_ID $PGHOST $PGUSER $PGPASSWORD $ENCRYPTION_KEY $API_URL
 ```
 
 
