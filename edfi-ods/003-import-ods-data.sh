@@ -27,6 +27,11 @@ for FILE in `LANG=C ls artifacts/edfi-ods-extensions-texasextensions/Artifacts/P
         psql -h $PGHOST -U $PGUSER 'EdFi_Ods_2022' < $FILE 
     done
 
+for FILE in `LANG=C ls artifacts/edfi-ods-extensions-texasextensions/Artifacts/PgSql/Data/Ods/*.sql | sort -V`
+    do
+        psql -h $PGHOST -U $PGUSER 'EdFi_Ods_2022' < $FILE
+    done
+
 
 for FILE in `LANG=C ls artifacts/edfi-ods-extensions-texasextensions/Artifacts/PgSql/Data/Security/*.sql | sort -V`
     do
